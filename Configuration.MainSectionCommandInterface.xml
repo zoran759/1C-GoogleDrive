@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<commandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<commandVisibility>
+		<command>DataProcessor.ПолучитьCode.StandardCommand.Open</command>
+		<visibility>
+			<xr:common>true</xr:common>
+		</visibility>
+	</commandVisibility>
+	<commandVisibility>
+		<command>DataProcessor.ЗаполнитьRefreshToken.StandardCommand.Open</command>
+		<visibility>
+			<xr:common>true</xr:common>
+		</visibility>
+	</commandVisibility>
+	<commandPlacement>
+		<command>DataProcessor.ПолучитьCode.StandardCommand.Open</command>
+		<commandGroup>ActionsPanelReports</commandGroup>
+		<placement>Auto</placement>
+	</commandPlacement>
+	<commandPlacement>
+		<command>DataProcessor.ЗаполнитьRefreshToken.StandardCommand.Open</command>
+		<commandGroup>ActionsPanelReports</commandGroup>
+		<placement>Auto</placement>
+	</commandPlacement>
+	<commandOrder>
+		<commandGroup>ActionsPanelCreate</commandGroup>
+		<command>Catalog.Файлы.StandardCommand.Create</command>
+	</commandOrder>
+	<commandOrder>
+		<commandGroup>ActionsPanelReports</commandGroup>
+		<command>DataProcessor.ПолучитьCode.StandardCommand.Open</command>
+	</commandOrder>
+	<commandOrder>
+		<commandGroup>ActionsPanelReports</commandGroup>
+		<command>DataProcessor.ЗаполнитьRefreshToken.StandardCommand.Open</command>
+	</commandOrder>
+	<manualOrderEditGroup>ActionsPanelCreate</manualOrderEditGroup>
+	<manualOrderEditGroup>ActionsPanelReports</manualOrderEditGroup>
+</commandInterface>
